@@ -96,7 +96,7 @@ end
 if Raised.Value > 999 then
 update(tostring(math.ceil(tonumber(Raised.Value + 1) / 100) * 100))
 else
-update(tostring(Raised.Value + 75))
+update(tostring(Raised.Value + 100))
 end
 local RaisedC = Players.LocalPlayer.leaderstats.Raised.value
 while(Players.LocalPlayer.leaderstats.Raised.value == RaisedC)
