@@ -87,9 +87,9 @@ local boothText
 function update(text)
 if Raised.Value > 999 then
 text = string.format("%.1fk", text / 10^3)
-boothText = tostring('<font color="#cd3278">Help me bring some water to Mar bois          MOIST_METER: '.. text.. '</font>')
+boothText = tostring('<font color="#cd3278">Project bring some water to Mar         MOIST_METER: '.. text.. '</font>')
 else
-boothText = tostring('<font color="#cd3278">Help me bring some water to Mar bois          MOIST_METER: '.. Raised.value.. ' / '.. text.. '</font>')
+boothText = tostring('<font color="#cd3278">Project bring some water to Mar         MOIST_METER: '.. Raised.value.. ' / '.. text.. '</font>')
 end
 require(game.ReplicatedStorage.Remotes).Event("SetBoothText"):FireServer(boothText, "booth")
 end
