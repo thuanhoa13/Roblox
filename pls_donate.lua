@@ -160,7 +160,7 @@ while true do
     if Raised.Value > 999 then
         update(tostring(math.ceil(tonumber(Raised.Value + 1) / 100) * 100))
     else
-        update(tostring(Raised.Value + 5))
+        update(tostring(Raised.Value + 75))
     end
 
     --Waits for a donation
