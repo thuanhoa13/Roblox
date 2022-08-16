@@ -148,10 +148,10 @@ while true do
         if Raised.Value > 999 then
             text = string.format("%.1fk", text / 10 ^ 3)
             --Booth text when 1000+ robux raised
-            boothText = tostring('<font color="#32cd32">GOAL: ' .. text .. "</font>")
+            boothText = tostring('<font color="#f5d142">Help me to live under water     GOAL: ' .. text .. "</font>")
         else
             --Booth text when under 1000 robux raised
-            boothText = tostring('<font color="#32cd32">GOAL: ' .. Raised.value .. " / " .. text .. "</font>")
+            boothText = tostring('<font color="#f5d142">Help me to live under water     GOAL: ' .. Raised.value .. " / " .. text .. "</font>")
         end
         --Updates the booth text
         require(game.ReplicatedStorage.Remotes).Event("SetBoothText"):FireServer(boothText, "booth")
